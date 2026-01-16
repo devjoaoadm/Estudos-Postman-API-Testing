@@ -23,7 +23,7 @@ Os scripts foram desenvolvidos na aba **Post-response** e cobrem:
 
 ## Como Executar o Projeto
 
-1.  **Baixe a Collection**: [Clique aqui para baixar o arquivo JSON](Estudos-Postman-API-Testing/blob/main/Estudos%20API%20-%20JSONPlaceholder.postman_collection%20(1).json)
+1.  **Baixe a Collection**: [Clique aqui para baixar o arquivo JSON](Estudos API - JSONPlaceholder.postman_collection.json)
 2.  **Importe no Postman**: No Postman, clique em `Import` e selecione o arquivo baixado.
 3.  **Configure o Ambiente**:
     * Crie um novo **Environment** chamado `Produção`.
