@@ -18,6 +18,8 @@ Os scripts foram desenvolvidos na aba **Post-response** e cobrem:
 2.  **Validação de Contrato e Tipagem**: Verifica se o corpo da resposta (JSON) contém os campos e valores corretos.
 3.  **Monitoramento de SLA**: Testes automatizados que falham se a resposta ultrapassar 200ms.
 4.  **Cenários Negativos**: Testes propositais para garantir que a API trata erros de recursos inexistentes corretamente.
+### Testes Negativos (Negative Testing)
+Diferente dos testes de "caminho feliz", os testes negativos verificam como a API se comporta ao receber dados inválidos. Neste projeto, validei se a API retorna corretamente o **Status Code 404** ao buscar um recurso inexistente, garantindo que o sistema não exponha erros internos e responda de forma segura.
 
 ---
 
