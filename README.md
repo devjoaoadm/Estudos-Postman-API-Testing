@@ -40,9 +40,8 @@ Diferente dos testes de "caminho feliz", os testes negativos verificam como a AP
 1.  **Baixe a Collection**: [ Clique aqui para baixar a Collection](./estudos-postman-api.json)
 2.  **Importe no Postman**: No Postman, clique em `Import` e selecione o arquivo baixado.
 3.  **Configure o Ambiente**:
-    * Crie um novo **Environment** chamado `Produção`.
-    * Adicione a variável `base_url` com o valor `https://jsonplaceholder.typicode.com`.
-    * Selecione esse ambiente no seletor localizado no canto superior direito.
+   * Importe o arquivo [Produção.postman_environment.json](./Produção.postman_environment.json) no Postman.
+   * No seletor de ambientes (canto superior direito), mude de `No Environment` para `Produção`.
 4.  **Execute**: Abra a requisição e clique em `Send`. Os resultados aparecerão na aba `Test Results`.
 
 ---
