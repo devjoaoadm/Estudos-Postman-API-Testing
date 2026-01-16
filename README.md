@@ -22,6 +22,18 @@ Os scripts foram desenvolvidos na aba **Post-response** e cobrem:
 Diferente dos testes de "caminho feliz", os testes negativos verificam como a API se comporta ao receber dados inválidos. Neste projeto, validei se a API retorna corretamente o **Status Code 404** ao buscar um recurso inexistente, garantindo que o sistema não exponha erros internos e responda de forma segura.
 
 ---
+<details>
+  <summary>📸 Clique aqui para ver as evidências dos testes (Screenshots)</summary>
+  
+  ### Teste de Busca (GET)
+  ![Resultado do Teste GET](./GET.png)
+  
+  ### Teste de Criação (POST)
+  ![Resultado do Teste POST](./POST.png)
+  
+  ### Teste de Erro (404)
+  ![Resultado do Teste 404](./GET-NOTFOUND.png)
+</details>
 
 ## Como Executar o Projeto
 
