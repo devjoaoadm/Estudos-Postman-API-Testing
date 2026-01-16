@@ -29,7 +29,7 @@ Para rodar estes testes na sua máquina, siga os passos abaixo:
 Você precisará ter o **Postman** instalado (Desktop ou Web).
 
 ### 2. Importando a Collection
-1.  Faça o download do arquivo JSON da collection neste repositório (caso disponível) ou copie o link da API.
+1.  Faça o download do arquivo JSON da collection neste repositório ou copie o link da API.
 2.  No Postman, clique no botão **Import** no canto superior esquerdo.
 3.  Arraste o arquivo baixado ou cole o link da collection.
 
