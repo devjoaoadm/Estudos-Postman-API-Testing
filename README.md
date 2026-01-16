@@ -1,42 +1,35 @@
-Automação de Testes de API - JSONPlaceholder
+# Automação de Testes de API - JSONPlaceholder
 
-Repositório destinado ao estudo de testes automatizados de API utilizando a ferramenta Postman. O foco deste projeto é validar a integridade dos dados e a performance da API pública JSONPlaceholder.
+Repositório destinado ao estudo de testes automatizados de API utilizando a ferramenta Postman. O projeto simula cenários reais de testes de regressão e performance em uma API REST.
 
-## Tecnologias Utilizadas
-* **Postman**: Ferramenta para desenvolvimento e testes de APIs.
-* **JavaScript**: Linguagem utilizada para a escrita dos scripts de validação.
-* **JSONPlaceholder API**: API REST fake para testes e prototipagem.
-
----
-
-## Explicação dos Testes Realizados
-
-Os testes foram escritos na aba **Scripts (Post-response)** do Postman e garantem os seguintes critérios de aceitação:
-
-1.  **Status Code 200**: Valida se a requisição foi processada com sucesso pelo servidor.
-2.  **Tempo de Resposta**: Verifica se a API responde em menos de 200ms, garantindo a performance da aplicação.
-3.  **Integridade do Corpo (String)**: Busca por palavras-chave obrigatórias no corpo da resposta para garantir que o conteúdo não está vazio ou corrompido.
-4.  **Validação de ID (Contrato)**: Compara o ID retornado no JSON com o ID solicitado na URL, garantindo que o sistema está entregando o dado correto.
-5.  **Tratamento de Erros (Negative Testing)**: Validação de retornos 404 para recursos inexistentes.
+## Tecnologias e Conceitos Aplicados
+* **Postman**: Ferramenta principal para execução e automação dos testes.
+* **JavaScript**: Scripts avançados para validação de regras de negócio e asserções.
+* **Variáveis de Ambiente (Environments)**: Configuração de `base_url` para tornar a collection dinâmica e escalável entre diferentes ambientes (Dev/Prod).
+* **Testes de Performance**: Validação de tempo de resposta (SLA) para garantir a eficiência da API.
 
 ---
 
-##  Como Executar este Projeto
+## Cenários de Teste
 
-Para rodar estes testes na sua máquina, siga os passos abaixo:
+Os scripts foram desenvolvidos na aba **Post-response** e cobrem:
 
-### 1. Pré-requisitos
-Você precisará ter o **Postman** instalado (Desktop ou Web).
-
-### 2. Importando a Collection
-1.  Faça o download do arquivo JSON da collection neste repositório ou copie o link da API.
-2.  No Postman, clique no botão **Import** no canto superior esquerdo.
-3.  Arraste o arquivo baixado ou cole o link da collection.
-
-### 3. Rodando os Testes
-1.  Selecione a requisição dentro da pasta **Estudos API - JSONPlaceholder**.
-2.  Clique no botão azul **Send**.
-3.  Clique na aba **Test Results** na parte inferior para visualizar os resultados (Pass/Fail).
+1.  **Validação de Status Code**: Garante que a API retorna o código esperado (ex: 200 OK, 201 Created, 404 Not Found).
+2.  **Validação de Contrato e Tipagem**: Verifica se o corpo da resposta (JSON) contém os campos e valores corretos.
+3.  **Monitoramento de SLA**: Testes automatizados que falham se a resposta ultrapassar 200ms.
+4.  **Cenários Negativos**: Testes propositais para garantir que a API trata erros de recursos inexistentes corretamente.
 
 ---
- *Projeto desenvolvido por João Pedro Brito para fins de estudo em Qualidade de Software (QA).*
+
+## Como Executar o Projeto
+
+1.  **Baixe a Collection**: [Clique aqui para baixar o arquivo JSON](./Estudos-Postman-API-Testing.postman_collection.json)
+2.  **Importe no Postman**: No Postman, clique em `Import` e selecione o arquivo baixado.
+3.  **Configure o Ambiente**:
+    * Crie um novo **Environment** chamado `Produção`.
+    * Adicione a variável `base_url` com o valor `https://jsonplaceholder.typicode.com`.
+    * Selecione esse ambiente no seletor localizado no canto superior direito.
+4.  **Execute**: Abra a requisição e clique em `Send`. Os resultados aparecerão na aba `Test Results`.
+
+---
+*Este projeto demonstra minha evolução em QA, unindo testes manuais, automação e documentação técnica.*
